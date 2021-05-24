@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1620286041 source:/home/rohit/Documents/CodeBlocks/newton_forward_interpolation_formula/main.c
+	<stdio.h>
+	<stdlib.h>
+
