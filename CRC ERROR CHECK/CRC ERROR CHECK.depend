@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1623659873 source:/home/rohit/Documents/CodeBlocks/CRC ERROR CHECK/main.c
+	<stdio.h>
+	<math.h>
+
