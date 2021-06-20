@@ -181,6 +181,42 @@ Altenative method :
             printf("Count = %d",count);
             return 0;
         }
+        
+        
+5) Find out the sum of all set bits from 1 to n;
+
+
+        #include<stdio.h>
+        #include<math.h>
+        
+        int countSetBits(int n)
+        {
+            if(n == 0) return 0;
+            
+            // count max power of 2 which is less than n.
+            int max_pow = log(n)/log(2);
+            
+            // count number of 1's before 2^n.
+            int a = pow(2,max_pow - 1) * max_pow;
+            
+            // count nummber of 1's of all leading bits.
+            int b = n - pow(2,max_pow) + 1;
+            
+            // number of remaining values.
+            int c = n - pow(2,max_pow); 
+            
+            return (a + b + countSetBits(c));
+        }
+        
+        int main()
+        {
+            int n;
+            scanf("%d",&n);
+            printf("%d",countSetBits(n));
+            return 0;
+        }
 
 */
+
+
 
